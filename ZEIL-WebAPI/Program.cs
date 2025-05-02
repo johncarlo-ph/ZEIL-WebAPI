@@ -1,3 +1,6 @@
+using ZEIL_WebAPI.Middleware;
+using ZEIL_WebAPI.SwaggerFilter;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(s =>
+{
+    s.OperationFilter<SwaggerAPIKeyFilter>();
+});
 
 var app = builder.Build();
 
@@ -17,9 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseMiddleware<APIKeyValidationMiddleware>();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
