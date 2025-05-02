@@ -1,0 +1,6 @@
+@ZEIL_WebAPI_HostAddress = http://localhost:5042
+
+GET {{ZEIL_WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
