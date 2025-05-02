@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZEIL-WebAPI", "ZEIL-WebAPI\ZEIL-WebAPI.csproj", "{14CB6144-D990-464E-8786-FA3537BF2671}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZEIL-WebAPI.core", "ZEIL-WebAPI.core\ZEIL-WebAPI.core.csproj", "{51EED209-8555-43D5-A881-0ED3960F456C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{14CB6144-D990-464E-8786-FA3537BF2671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14CB6144-D990-464E-8786-FA3537BF2671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14CB6144-D990-464E-8786-FA3537BF2671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EED209-8555-43D5-A881-0ED3960F456C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EED209-8555-43D5-A881-0ED3960F456C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EED209-8555-43D5-A881-0ED3960F456C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EED209-8555-43D5-A881-0ED3960F456C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
